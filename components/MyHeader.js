@@ -10,12 +10,13 @@ import { Appbar } from 'react-native-paper';
 
 class MyHeader extends Component {
   render() {
+    const {title} = this.props
     return (
       <Appbar.Header>
           
           <Appbar.Content
             title="QuickWeather"
-            subtitle="Select city"
+            subtitle={title}
             style={{alignItems:"center"}}
           />
         </Appbar.Header>
